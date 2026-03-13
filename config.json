@@ -1,0 +1,99 @@
+{
+    "categories":  {
+                       "PowerPoint Files":  [
+                                                "ppt",
+                                                "pptx",
+                                                "pptm"
+                                            ],
+                       "Archives":  [
+                                        "zip",
+                                        "rar",
+                                        "7z",
+                                        "tar",
+                                        "gz"
+                                    ],
+                       "Images":  [
+                                      "jpg",
+                                      "jpeg",
+                                      "png",
+                                      "gif",
+                                      "bmp",
+                                      "svg",
+                                      "webp",
+                                      "tiff"
+                                  ],
+                       "Videos":  [
+                                      "mp4",
+                                      "avi",
+                                      "mkv",
+                                      "mov",
+                                      "wmv",
+                                      "flv"
+                                  ],
+                       "Text":  [
+                                    "txt",
+                                    "md",
+                                    "log",
+                                    "rtf",
+                                    "json",
+                                    "xml",
+                                    "yaml",
+                                    "yml",
+                                    "ini",
+                                    "cfg"
+                                ],
+                       "PDF Files":  [
+                                         "pdf"
+                                     ],
+                       "Executables":  [
+                                           "exe",
+                                           "msi",
+                                           "bat",
+                                           "cmd"
+                                       ],
+                       "Code":  [
+                                    "ps1",
+                                    "py",
+                                    "js",
+                                    "ts",
+                                    "cpp",
+                                    "c",
+                                    "h",
+                                    "cs",
+                                    "java",
+                                    "rb",
+                                    "go",
+                                    "rs"
+                                ],
+                       "Word Files":  [
+                                          "doc",
+                                          "docx",
+                                          "docm",
+                                          "dotx"
+                                      ],
+                       "Excel Files":  [
+                                           "xls",
+                                           "xlsx",
+                                           "xlsm",
+                                           "csv"
+                                       ],
+                       "Audio":  [
+                                     "mp3",
+                                     "wav",
+                                     "flac",
+                                     "ogg",
+                                     "aac",
+                                     "wma"
+                                 ]
+                   },
+    "defaultDepth":  100,
+    "defaultAction":  "Move",
+    "excludePatterns":  [
+                            "Thumbs.db",
+                            ".DS_Store",
+                            "desktop.ini",
+                            "*.tmp",
+                            "~$*"
+                        ],
+    "createTypeSubfolder":  true
+}
