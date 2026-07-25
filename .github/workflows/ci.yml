@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check PowerShell syntax
+        shell: pwsh
+        run: |
+          $files = Get-ChildItem -Recurse -Filter "*.ps1"
+          $files | ForEach-Object {
+            $errors = $null
+            $ast = [System.Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$null, [ref]$errors)
+            if ($errors) {
+              Write-Error "Syntax error in $($_.Name): $($errors[0].Message)"
+              exit 1
+            }
+            Write-Host "OK: $($_.Name)"
+          }
